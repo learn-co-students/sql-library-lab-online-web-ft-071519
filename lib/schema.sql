@@ -29,4 +29,5 @@ CREATE TABLE Characters (id INTEGER PRIMARY KEY,
 CREATE TABLE character_books(id INTEGER PRIMARY KEY,
 character_id INTEGER,
 book_id INTEGER
+  sub_genre_id INTEGER
 )
