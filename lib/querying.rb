@@ -19,7 +19,11 @@ LIMIT 1"
 end
 
 def select_name_and_series_subgenres_of_authors
-  "Write your SQL query here"
+  "SELECT Authors.name,SubGenres.name FROM Authors
+JOIN Series
+ON Authors.id = Series.author_id
+INNER JOIN SubGenres
+ON SubGenres.id = Series.subgenre_id"
 end
 
 def select_series_title_with_most_human_characters
