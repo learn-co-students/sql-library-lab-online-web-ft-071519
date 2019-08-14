@@ -31,8 +31,7 @@ def select_series_title_with_most_human_characters
 JOIN Characters
 ON Series.author_id = Characters.author_id
 GROUP BY Characters.species
-HAVING Characters.species = 'human'
-ORDER BY COUNT(Characters.species) DESC"
+HAVING Characters.species = 'human';"
 end
 
 def select_character_names_and_number_of_books_they_are_in
